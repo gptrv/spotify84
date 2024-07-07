@@ -276,7 +276,7 @@ module.exports = tseslint.config(
                 "error",
                 {
                     type: "element",
-                    prefix: "app",
+                    prefix: "sp",
                     style: "kebab-case",
                 },
             ],
