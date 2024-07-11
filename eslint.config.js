@@ -205,6 +205,7 @@ module.exports = tseslint.config(
                     }
                 }
             ],
+            "@typescript-eslint/consistent-generic-constructors": "off",
             "@typescript-eslint/array-type": [
                 "error",
                 {

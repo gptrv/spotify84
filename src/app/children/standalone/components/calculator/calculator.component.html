@@ -1,0 +1,41 @@
+<input
+    size="m"
+    tuiSlider
+    type="range"
+    [formControl]="$any(formGroup().get('price'))"
+    [min]="250"
+    [max]="1000"
+    [segments]="3"
+    [step]="250"
+/>
+
+<div class="ticks-labels">
+    @for (label of labels; track $index) {
+        <button
+            type="button"
+            class="tick-label"
+            (click)="patchValue(label)"
+        >
+            @switch (label) {
+                @case (250) {
+                    1m
+                }
+                @case (500) {
+                    3m
+                }
+                @case (750) {
+                    6m
+                }
+                @case (1000) {
+                    12m
+                }
+            }
+        </button>
+
+    }
+</div>
+
+<!--<p>-->
+<!--    Control value:-->
+<!--    <code>{{ formControl.value }}</code>-->
+<!--</p>-->

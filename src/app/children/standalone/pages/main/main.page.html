@@ -1,0 +1,24 @@
+<div class="main">
+    <div class="main__intro">
+        <div>1. Подключение подписки</div>
+        <div>2. Создание аккаунта</div>
+        <div>3. Восстановление доступа</div>
+        <div>4. Гарантия на весь срок подписки</div>
+    </div>
+    <tui-notification
+        [size]="'m'"
+        [status]="'info'"
+    >
+        Уведомление
+    </tui-notification>
+    <div class="main__generator">
+        <sp-subscription [formGroup]="formGroup" class="main__subscription"></sp-subscription>
+        <sp-calculator [formGroup]="formGroup" class="main__calculator"></sp-calculator>
+    </div>
+    <div class="main__current-price">
+        {{currentPrice() | json}}
+    </div>
+    <div class="main__table"></div>
+
+</div>
+

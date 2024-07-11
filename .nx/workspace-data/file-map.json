@@ -12,6 +12,14 @@
     "@angular/platform-server": "18.0.0",
     "@angular/router": "18.0.0",
     "@angular/ssr": "18.0.5",
+    "@taiga-ui/cdk": "^3.84.0",
+    "@taiga-ui/core": "^3.84.0",
+    "@taiga-ui/icons": "^3.84.0",
+    "@taiga-ui/kit": "^3.84.0",
+    "@taiga-ui/layout": "^3.84.0",
+    "@taiga-ui/styles": "^3.84.0",
+    "@tinkoff/ng-dompurify": "4.0.0",
+    "dompurify": "3.0.6",
     "express": "^4.18.2",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
@@ -20,6 +28,7 @@
     "@angular-eslint/eslint-plugin": "17.5.2",
     "@angular/cli": "18.0.5",
     "@angular/compiler-cli": "18.0.0",
+    "@types/dompurify": "3.0.5",
     "@types/express": "^4.17.17",
     "@types/node": "^18.18.0",
     "@typescript-eslint/eslint-plugin": "^7.15.0",
@@ -38,11 +47,11 @@
     "nonProjectFiles": [
       {
         "file": ".editorconfig",
-        "hash": "17241496168097493888"
+        "hash": "7054233358509192993"
       },
       {
         "file": ".gitignore",
-        "hash": "10175894702052279752"
+        "hash": "14918540384091983367"
       },
       {
         "file": ".vscode/extensions.json",
@@ -62,19 +71,15 @@
       },
       {
         "file": "angular.json",
-        "hash": "9643907531022416839"
+        "hash": "11548304791292923808"
       },
       {
         "file": "eslint.config.js",
-        "hash": "5155267692705487035"
-      },
-      {
-        "file": "package-lock.json",
-        "hash": "5112586002693198014"
+        "hash": "17451723138934847473"
       },
       {
         "file": "package.json",
-        "hash": "6958184618110294839"
+        "hash": "5640409238110024113"
       },
       {
         "file": "public/favicon.ico",
@@ -86,7 +91,7 @@
       },
       {
         "file": "src/app/app.component.html",
-        "hash": "3244421341483603138"
+        "hash": "15413047599882789807"
       },
       {
         "file": "src/app/app.component.less",
@@ -94,19 +99,95 @@
       },
       {
         "file": "src/app/app.component.ts",
-        "hash": "7426487067292964326"
+        "hash": "17893385067668935110"
       },
       {
         "file": "src/app/app.config.server.ts",
-        "hash": "15184490126418035619"
+        "hash": "8180511695544834734"
       },
       {
         "file": "src/app/app.config.ts",
-        "hash": "3578157151168961584"
+        "hash": "12252088663289959075"
       },
       {
         "file": "src/app/app.routes.ts",
-        "hash": "809736233805555256"
+        "hash": "10507691173512970996"
+      },
+      {
+        "file": "src/app/children/standalone/components/calculator/calculator.component.html",
+        "hash": "6992539306422769168"
+      },
+      {
+        "file": "src/app/children/standalone/components/calculator/calculator.component.ts",
+        "hash": "14077697622822258446"
+      },
+      {
+        "file": "src/app/children/standalone/components/calculator/styles/calculator.less",
+        "hash": "5385675353436140334"
+      },
+      {
+        "file": "src/app/children/standalone/components/footer/footer.component.html",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "src/app/children/standalone/components/footer/footer.component.ts",
+        "hash": "15095812165150394358"
+      },
+      {
+        "file": "src/app/children/standalone/components/footer/styles/footer.less",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "src/app/children/standalone/components/header/header.component.html",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "src/app/children/standalone/components/header/header.component.ts",
+        "hash": "6436861990910875424"
+      },
+      {
+        "file": "src/app/children/standalone/components/header/styles/header.less",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "src/app/children/standalone/components/subscription/styles/subscription.less",
+        "hash": "9603166595609802497"
+      },
+      {
+        "file": "src/app/children/standalone/components/subscription/subscription.component.html",
+        "hash": "8285635224036766104"
+      },
+      {
+        "file": "src/app/children/standalone/components/subscription/subscription.component.ts",
+        "hash": "5289853660141541427"
+      },
+      {
+        "file": "src/app/children/standalone/components/table/styles/table.less",
+        "hash": "12612816580753534963"
+      },
+      {
+        "file": "src/app/children/standalone/components/table/table.component.html",
+        "hash": "4429491034504249416"
+      },
+      {
+        "file": "src/app/children/standalone/components/table/table.component.ts",
+        "hash": "3185328015874673938"
+      },
+      {
+        "file": "src/app/children/standalone/pages/main/main.page.html",
+        "hash": "11754695599272928503"
+      },
+      {
+        "file": "src/app/children/standalone/pages/main/main.page.ts",
+        "hash": "11258021963494245409"
+      },
+      {
+        "file": "src/app/children/standalone/pages/main/styles/main.page.less",
+        "hash": "6398246558412110425"
+      },
+      {
+        "file": "src/app/children/standalone/services/price-manager.service.ts",
+        "hash": "13580997279547186819"
       },
       {
         "file": "src/index.html",
@@ -114,15 +195,15 @@
       },
       {
         "file": "src/main.server.ts",
-        "hash": "9257623809215978365"
+        "hash": "8217968847028844635"
       },
       {
         "file": "src/main.ts",
-        "hash": "4169901790405087765"
+        "hash": "2162179975951365720"
       },
       {
         "file": "src/styles.less",
-        "hash": "2917954890128038984"
+        "hash": "18258705951547977113"
       },
       {
         "file": "tsconfig.app.json",
