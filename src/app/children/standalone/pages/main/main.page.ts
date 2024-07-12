@@ -6,6 +6,7 @@ import { throttleTime } from 'rxjs';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { JsonPipe } from '@angular/common';
 import { TuiNotificationModule } from "@taiga-ui/core";
+import { TableComponent } from "../../components/table/table.component";
 
 @Component({
     standalone: true,
@@ -16,7 +17,8 @@ import { TuiNotificationModule } from "@taiga-ui/core";
         SubscriptionComponent,
         ReactiveFormsModule,
         JsonPipe,
-        TuiNotificationModule
+        TuiNotificationModule,
+        TableComponent
     ],
     changeDetection: ChangeDetectionStrategy.OnPush
 })
