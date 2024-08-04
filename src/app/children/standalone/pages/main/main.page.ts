@@ -11,7 +11,7 @@ import {
 import { CalculatorComponent } from '../../components/calculator/calculator.component';
 import { SubscriptionComponent } from '../../components/subscription/subscription.component';
 import { FormBuilder, FormGroup, ReactiveFormsModule } from '@angular/forms';
-import { startWith, take, throttleTime } from 'rxjs';
+import { filter, startWith, take, throttleTime } from 'rxjs';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { JsonPipe } from '@angular/common';
 import {
@@ -27,6 +27,7 @@ import { ContentComponent } from '../../components/content/content.component';
 import { TuiIconModule, TuiTitleModule } from '@taiga-ui/experimental';
 import { Router } from '@angular/router';
 import { FooterComponent } from '../../components/footer/footer.component';
+import { WINDOW } from "@ng-web-apis/common";
 
 export enum Subscription {
     individual = 'individual',
@@ -69,10 +70,14 @@ export class MainPage implements OnInit {
         price: 190,
         time: 1
     });
+    public getScreenWidth: any;
+    public getScreenHeight: any;
+
     private _formBuilder: FormBuilder = inject(FormBuilder);
     private _destroyRef: DestroyRef = inject(DestroyRef);
     private _router: Router = inject(Router);
-
+    private _window: Window = inject(WINDOW);
+    private _isMobile: boolean = false;
 
     constructor(
         @Inject(TuiDialogService) private readonly _dialogs: TuiDialogService,
@@ -86,6 +91,13 @@ export class MainPage implements OnInit {
     }
 
     public ngOnInit(): void {
+
+        this.getScreenWidth = window.innerWidth;
+        this.getScreenHeight = window.innerHeight;
+
+        if (this._window.innerWidth < 600) {
+            this._isMobile = true;
+        }
         this.formGroup.valueChanges
             .pipe(
                 startWith(this.formGroup.getRawValue()),
@@ -171,7 +183,7 @@ export class MainPage implements OnInit {
      */
     public onClick(): void {
         const data: TuiPromptData = {
-            content: 'Напишите нам в телегарм, чтобы оформить подписку!',
+            content: 'Напишите нам в телегарм, чтобы оформить подписку! <br /><br /> Можно перейти по кнопке или написать на этот аккаунт: @gptrv',
             yes: 'Да!',
             no: 'Нужно подумать',
         };
@@ -179,12 +191,17 @@ export class MainPage implements OnInit {
         this._dialogs
             .open<boolean>(TUI_PROMPT, {
                 label: 'Перейти в телеграм?',
-                size: 's',
+                size: this._isMobile ? 'fullscreen' : 's',
                 data,
             })
             .pipe(
+                filter((data: boolean) => data),
                 take(1)
             )
-            .subscribe();
+            .subscribe({
+                next: () => {
+                    this._window.open('https://t.me/gptrv', "_blank");
+                }
+            });
     }
 }
