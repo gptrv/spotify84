@@ -1,0 +1,106 @@
+<table
+    tuiTable
+    class="table tui-space_top-3 tui-text_body-m-2"
+    [columns]="columns"
+>
+    <thead>
+    <tr tuiThGroup>
+        <th
+            *tuiHead="'subscription'"
+            tuiTh
+        >
+            Подписка
+        </th>
+        <th
+            *tuiHead="'period'"
+            tuiTh
+        >
+            Период (месяц)
+        </th>
+        <th
+            *tuiHead="'price'"
+            tuiTh
+        >
+            Стоимость (руб.)
+        </th>
+        <th
+            *tuiHead="'pricePerson'"
+            tuiTh
+        >
+            Стоимость (руб.)/человек
+        </th>
+        <th
+            *tuiHead="'country'"
+            tuiTh
+        >
+            Страна
+        </th>
+        <th
+            *tuiHead="'actions'"
+            tuiTh
+            [sorter]="null"
+        ></th>
+    </tr>
+    </thead>
+    <tbody
+        *tuiLet="(users$ | async)! | tuiTableSort as sortedUsers"
+        tuiTbody
+        [data]="sortedUsers"
+    >
+    <tr *ngFor="let item of sortedUsers; let index = index" tuiTr>
+        <td *tuiCell="'subscription'" tuiTd>
+            <tui-tag
+                class="tui-space_right-1 table__{{item.subscription}}"
+                [autoColor]="false"
+
+                [value]="item.subscription"
+            ></tui-tag>
+        </td>
+        <td
+            *tuiCell="'period'"
+            tuiTd
+        >
+            {{ item.period }}
+        </td>
+        <td
+            *tuiCell="'price'"
+            tuiTd
+        >
+            {{ item.price }}
+        </td>
+        <td
+            *tuiCell="'pricePerson'"
+            tuiTd
+        >
+            {{ item.pricePerson }}
+        </td>
+        <td
+            *tuiCell="'country'"
+            tuiTd
+        >
+            <tui-tag
+                *ngFor="let tag of item.country"
+                class="tui-space_right-1"
+                [autoColor]="true"
+                [value]="tag"
+            ></tui-tag>
+        </td>
+        <td
+            *tuiCell="'actions'"
+            tuiTd
+        >
+            <button
+                (click)="click()"
+                appearance="flat"
+                icon="tuiIconSkipForward"
+                shape="rounded"
+                size="s"
+                title="купить"
+                tuiIconButton
+                type="button"
+                class="add"
+            ></button>
+        </td>
+    </tr>
+    </tbody>
+</table>
