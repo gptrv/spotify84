@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { TuiButtonModule } from '@taiga-ui/core';
 import { Router } from '@angular/router';
-import { TuiTitleModule } from "@taiga-ui/experimental";
+import { TuiTitleModule } from '@taiga-ui/experimental';
 
 @Component({
     standalone: true,
@@ -21,6 +21,6 @@ export class AboutPage {
      * Обработка клика
      */
     public onClick(): void {
-        this._router.navigate(['main'], { replaceUrl: true });
+        this._router.navigate(['/'], { replaceUrl: true });
     }
 }
