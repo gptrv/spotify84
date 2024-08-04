@@ -1,0 +1,76 @@
+@import '@taiga-ui/core/styles/taiga-ui-local.less';
+
+.table {
+    width: 100%;
+}
+//td,
+//th {
+//    white-space: nowrap;
+//    border-color: transparent;
+//    border-right-color: var(--tui-base-04);
+//
+//    &:last-child {
+//        border-right-color: transparent;
+//    }
+//}
+//table {
+//    width: 100%;
+//}
+//
+//tbody {
+//    border-color: transparent;
+//}
+//
+//tr:nth-child(even) td {
+//    background: var(--tui-base-02);
+//}
+//
+//.alive,
+//.deceased {
+//    display: flex;
+//    align-items: center;
+//    text-transform: capitalize;
+//
+//    &:before {
+//        content: '';
+//        width: 0.5rem;
+//        height: 0.5rem;
+//        border-radius: 100%;
+//        margin-right: 0.5rem;
+//        background: var(--tui-base-04);
+//    }
+//}
+//
+//.alive:before {
+//    background: var(--tui-success-fill);
+//}
+//
+//.add {
+//    .transition(opacity);
+//    opacity: 1;
+//
+//    tr:hover &,
+//    tr:focus-within & {
+//        opacity: 1;
+//    }
+//}
+//
+//.tag {
+//    .gradient(#c86dd7, #3023ae);
+//    color: var(--tui-text-01-night);
+//}
+//
+.table {
+    &__individual {
+        .gradient(#FFBF00, #FFBF00);
+        color: var(--tui-text-01-night);
+    }
+    &__duo {
+        .gradient(#1DB954, #1DB954);
+        color: var(--tui-text-02-night);
+    }
+    &__family {
+        .gradient(#24A1DE, #24A1DE);
+        color: var(--tui-text-02-night);
+    }
+}

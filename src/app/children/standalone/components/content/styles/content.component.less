@@ -1,0 +1,85 @@
+@import '@taiga-ui/core/styles/taiga-ui-local.less';
+
+.title {
+    font: var(--tui-font-heading-4);
+    margin: 0 0 @space * 4;
+
+    &_size_s {
+        font: var(--tui-font-heading-6);
+        margin: 0 0 @space * 3;
+    }
+}
+
+.text {
+    font: var(--tui-font-text-m);
+    margin: 0 0 @space * 6;
+}
+
+.image {
+    display: block;
+    max-width: ~'calc(100% + 2.5rem)';
+    margin: -1.25rem -1.25rem 1.25rem;
+    border-radius: var(--tui-radius-l) var(--tui-radius-l) 0 0;
+}
+
+.my-panel {
+    display: flex;
+    height: 15rem;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+    overflow: hidden;
+
+    .title {
+        margin-top: 2.1875rem;
+    }
+
+    [tuiaction] {
+        box-shadow: none;
+        border: 1px solid var(--tui-base-03);
+        border-bottom: none;
+        border-radius-right-bottom: 0;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+
+    &:hover [tuiaction] {
+        transform: translateY(-1.6rem);
+    }
+}
+
+.content {
+    &__svg {
+        position: absolute;
+        z-index: -1;
+        right: -10px;
+        bottom: -5px;
+    }
+
+    &__inner {
+        &-title {
+            margin-right: 8px;
+        }
+    }
+
+    &__block {
+        &-wrapper {
+            padding-top: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &-button {
+            background-color: #191414;
+            color: #fff;
+            top: 30px;
+            padding-bottom: 60px;
+        }
+    }
+
+    &__island {
+        height: 100%;
+    }
+}
+
