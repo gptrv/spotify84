@@ -1,0 +1,38 @@
+<input
+    size="m"
+    tuiSlider
+    type="range"
+    [formControl]="$any(formGroup().get('subscription'))"
+    [min]="250"
+    [max]="750"
+    [segments]="2"
+    [step]="250"
+/>
+
+<div class="ticks-labels">
+    @for (label of labels; track $index) {
+        <button
+            type="button"
+            class="tick-label"
+            (click)="patchValue(label)"
+        >
+            @switch (label) {
+                @case (250) {
+                    individual
+                }
+                @case (500) {
+                    duo
+                }
+                @case (750) {
+                    family
+                }
+            }
+        </button>
+
+    }
+</div>
+
+<!--<p>-->
+<!--    Control value:-->
+<!--    <code>{{ formControl.value }}</code>-->
+<!--</p>-->
