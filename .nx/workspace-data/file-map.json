@@ -1,0 +1,271 @@
+{
+  "version": "6.0",
+  "nxVersion": "19.4.3",
+  "deps": {
+    "@angular/animations": "^18.0.0",
+    "@angular/cdk": "^18.0.0",
+    "@angular/common": "^18.0.0",
+    "@angular/compiler": "^18.0.0",
+    "@angular/core": "^18.0.0",
+    "@angular/forms": "^18.0.0",
+    "@angular/platform-browser": "^18.0.0",
+    "@angular/platform-browser-dynamic": "^18.0.0",
+    "@angular/router": "^18.0.0",
+    "@ng-web-apis/common": "^3.0.6",
+    "@taiga-ui/addon-charts": "^3.86.0",
+    "@taiga-ui/addon-mobile": "^3.86.0",
+    "@taiga-ui/addon-table": "^3.86.0",
+    "@taiga-ui/addon-tablebars": "^3.86.0",
+    "@taiga-ui/cdk": "^3.86.0",
+    "@taiga-ui/core": "^3.86.0",
+    "@taiga-ui/experimental": "^3.84.0",
+    "@taiga-ui/icons": "^3.86.0",
+    "@taiga-ui/kit": "^3.86.0",
+    "@taiga-ui/layout": "^3.86.0",
+    "@taiga-ui/styles": "^3.86.0",
+    "@tinkoff/ng-dompurify": "4.0.0",
+    "dompurify": "3.0.6",
+    "ngx-page-scroll": "^13.0.0",
+    "rxjs": "~7.8.0",
+    "tslib": "^2.6.3",
+    "zone.js": "~0.14.3",
+    "@angular-devkit/build-angular": "^18.0.5",
+    "@angular-eslint/eslint-plugin": "17.5.2",
+    "@angular/cli": "^18.0.5",
+    "@angular/compiler-cli": "^18.0.0",
+    "@types/dompurify": "3.0.5",
+    "@types/express": "^4.17.17",
+    "@types/node": "^18.18.0",
+    "@typescript-eslint/eslint-plugin": "^7.15.0",
+    "@typescript-eslint/parser": "^7.15.0",
+    "@typescript-eslint/utils": "^7.15.0",
+    "angular-eslint": "^18.0.1",
+    "eslint": "8.57.0",
+    "eslint-plugin-jsdoc": "^48.5.0",
+    "typescript": "~5.4.2",
+    "typescript-eslint": "^8.0.0-alpha.39"
+  },
+  "pathMappings": {},
+  "nxJsonPlugins": [],
+  "fileMap": {
+    "projectFileMap": {},
+    "nonProjectFiles": [
+      {
+        "file": ".editorconfig",
+        "hash": "7054233358509192993"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "14918540384091983367"
+      },
+      {
+        "file": ".vscode/extensions.json",
+        "hash": "11934160580685414355"
+      },
+      {
+        "file": ".vscode/launch.json",
+        "hash": "17406702432687230417"
+      },
+      {
+        "file": ".vscode/tasks.json",
+        "hash": "10093397977228577162"
+      },
+      {
+        "file": "README.md",
+        "hash": "6590009497424235636"
+      },
+      {
+        "file": "angular.json",
+        "hash": "13600249750378573259"
+      },
+      {
+        "file": "eslint.config.js",
+        "hash": "4111632939989037713"
+      },
+      {
+        "file": "package.json",
+        "hash": "1250081939123201267"
+      },
+      {
+        "file": "public/favicon.ico",
+        "hash": "3988961587069885523"
+      },
+      {
+        "file": "src/app/app.component.html",
+        "hash": "15841987164272217682"
+      },
+      {
+        "file": "src/app/app.component.less",
+        "hash": "4991049018551988035"
+      },
+      {
+        "file": "src/app/app.component.ts",
+        "hash": "14098145068204586317"
+      },
+      {
+        "file": "src/app/app.config.ts",
+        "hash": "11400616959522557756"
+      },
+      {
+        "file": "src/app/app.routes.ts",
+        "hash": "10155921189876445066"
+      },
+      {
+        "file": "src/app/children/standalone/components/calculator/calculator.component.html",
+        "hash": "15854400899068509466"
+      },
+      {
+        "file": "src/app/children/standalone/components/calculator/calculator.component.ts",
+        "hash": "14403564426201030125"
+      },
+      {
+        "file": "src/app/children/standalone/components/calculator/styles/calculator.less",
+        "hash": "9299582966307252804"
+      },
+      {
+        "file": "src/app/children/standalone/components/card/card.component.html",
+        "hash": "14673668286758076741"
+      },
+      {
+        "file": "src/app/children/standalone/components/card/card.component.ts",
+        "hash": "12377886835942150293"
+      },
+      {
+        "file": "src/app/children/standalone/components/content/content.component.html",
+        "hash": "1923614506501506854"
+      },
+      {
+        "file": "src/app/children/standalone/components/content/content.component.ts",
+        "hash": "10961599037149087372"
+      },
+      {
+        "file": "src/app/children/standalone/components/content/styles/content.component.less",
+        "hash": "16434288041325671696"
+      },
+      {
+        "file": "src/app/children/standalone/components/footer/footer.component.html",
+        "hash": "4327116727342950849"
+      },
+      {
+        "file": "src/app/children/standalone/components/footer/footer.component.ts",
+        "hash": "12832174148814262543"
+      },
+      {
+        "file": "src/app/children/standalone/components/footer/styles/footer.less",
+        "hash": "11033636131123745541"
+      },
+      {
+        "file": "src/app/children/standalone/components/header/header.component.html",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "src/app/children/standalone/components/header/header.component.ts",
+        "hash": "6436861990910875424"
+      },
+      {
+        "file": "src/app/children/standalone/components/header/styles/header.less",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "src/app/children/standalone/components/subscription/styles/subscription.less",
+        "hash": "5768934768106346005"
+      },
+      {
+        "file": "src/app/children/standalone/components/subscription/subscription.component.html",
+        "hash": "8285635224036766104"
+      },
+      {
+        "file": "src/app/children/standalone/components/subscription/subscription.component.ts",
+        "hash": "5289853660141541427"
+      },
+      {
+        "file": "src/app/children/standalone/components/table/styles/table.less",
+        "hash": "1009195990152877477"
+      },
+      {
+        "file": "src/app/children/standalone/components/table/table.component.html",
+        "hash": "7141931290276339851"
+      },
+      {
+        "file": "src/app/children/standalone/components/table/table.component.ts",
+        "hash": "14869944885024944127"
+      },
+      {
+        "file": "src/app/children/standalone/pages/about/about.page.html",
+        "hash": "2445678469370589512"
+      },
+      {
+        "file": "src/app/children/standalone/pages/about/about.page.ts",
+        "hash": "3680816624313487114"
+      },
+      {
+        "file": "src/app/children/standalone/pages/about/styles/about.page.less",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "src/app/children/standalone/pages/intro/intro.page.html",
+        "hash": "13632008428189777301"
+      },
+      {
+        "file": "src/app/children/standalone/pages/intro/intro.page.ts",
+        "hash": "9265905589815127198"
+      },
+      {
+        "file": "src/app/children/standalone/pages/intro/styles/equaliser.less",
+        "hash": "18136746449299321363"
+      },
+      {
+        "file": "src/app/children/standalone/pages/intro/styles/intro.page.less",
+        "hash": "5748416640366909244"
+      },
+      {
+        "file": "src/app/children/standalone/pages/main/main.page.html",
+        "hash": "4137876964672875829"
+      },
+      {
+        "file": "src/app/children/standalone/pages/main/main.page.ts",
+        "hash": "13411289571288592398"
+      },
+      {
+        "file": "src/app/children/standalone/pages/main/styles/main.page.less",
+        "hash": "3434710941642028135"
+      },
+      {
+        "file": "src/app/children/standalone/services/price-manager.service.ts",
+        "hash": "13580997279547186819"
+      },
+      {
+        "file": "src/assets/images/icons8-telegram-96.svg",
+        "hash": "16514524007009686407"
+      },
+      {
+        "file": "src/assets/images/spotify-logo.svg",
+        "hash": "49815068697157693"
+      },
+      {
+        "file": "src/index.html",
+        "hash": "7608158245035590365"
+      },
+      {
+        "file": "src/main.ts",
+        "hash": "4169901790405087765"
+      },
+      {
+        "file": "src/styles.less",
+        "hash": "18258705951547977113"
+      },
+      {
+        "file": "tsconfig.app.json",
+        "hash": "14560978611694835822"
+      },
+      {
+        "file": "tsconfig.json",
+        "hash": "537034293907716874"
+      },
+      {
+        "file": "tsconfig.spec.json",
+        "hash": "11023685540591620072"
+      }
+    ]
+  }
+}
